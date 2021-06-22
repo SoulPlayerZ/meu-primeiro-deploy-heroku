@@ -1,0 +1,22 @@
+header{
+    text-align: center;
+}
+
+nav{
+    display: inline-block
+}
+
+li{
+    display: inline-block;
+    margin-right: 25px;
+}
+table {
+    width: 28%;
+    margin-left: 78%;
+  }
+.reference{
+    background-color: red;
+
+}
+footer{
+}
