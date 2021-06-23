@@ -3,7 +3,8 @@ header{
 }
 
 nav{
-    display: inline-block
+    display: inline-block;
+
 }
 
 li{
@@ -12,11 +13,17 @@ li{
 }
 table {
     width: 28%;
-    margin-left: 78%;
+
+    margin-left: 150px;
   }
 .reference{
-    background-color: red;
+   
+    margin-top: 120px;
+    margin-bottom: 40px;
 
 }
 footer{
+  
+    padding: 15px;
+    
 }
