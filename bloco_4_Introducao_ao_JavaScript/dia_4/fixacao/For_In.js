@@ -1,14 +1,18 @@
-/*  EXERCICIO 1  
-
-let names = {
+/*   EXERCICIO 1 */
+ 
+ let names = {
     person1: 'João',
     person2: 'Maria',
     person3: 'Jorge' 
-  };
+  }; 
 
+function Hello(names){
   for(let index in names){
       console.log("Olá " + names[index]);
-  } */
+  } 
+}
+Hello(names);
+
 
 /*EXERCICIO 2
 
