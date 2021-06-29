@@ -1,21 +1,21 @@
 //Alguns exercicios precisam de outros exercicios sem estar comentados para funcionar
 
 
-/* Exercicio 1
+//Exercicio 1
 
 let info = {
     personagem: 'Margarida',
     origem: 'Pato Donald',
     nota: 'Namorada do personagem principal nos quadrinhos do Pato Donald',
-  }; */
+  };
 
 /*   console.log("Bem-vindo(a)", info["personagem"] + ".");  */
 
-/* Exercicio 2 
+//Exercicio 2 
 
 info['recorrente'] = 'Sim';
 
- console.log(info); */ 
+ //console.log(info);  
 
 
 /* Exercicio 3
@@ -31,8 +31,7 @@ for(let keys in info){
 } */
 
 
-/* Exercício 5
-
+// Exercício 5
 let info2 = {
     personagem: "Tio Patinhas",
     origem: "Christmas on Bear Mountain, Dell's Four Color Comics #178",
@@ -40,10 +39,16 @@ let info2 = {
 };
 info2["recorrente"] = "Sim";
 
-console.log(info.personagem, "e", info2.personagem);
+/* console.log(info.personagem, "e", info2.personagem);
 console.log(info.origem, "e", info2.origem);
 console.log(info.nota, "e", info2.nota);
+ */
 
-if((info["recorrente"] === "Sim") && (info2.recorrente === "Sim")){
-console.log("Ambos recorrentes");
-} */
+
+for(let keys in info, info2){
+    if(keys === "recorrente" && info.recorrente === "Sim" && info2["recorrente"] === "Sim"){
+        console.log("Ambos recorrentes");
+    }else{
+        console.log(info[keys], "e", info2[keys]);
+    }
+}

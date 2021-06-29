@@ -1,14 +1,12 @@
 function verificaPalindromo(palavra){
-    let word = "";
-    let w = word.toLocaleLowerCase();
-    let p = palavra.toLocaleLowerCase();
-    for (let index = 1; index <= p.length; index += 1){
+    let word = "";;
+    for (let index = 1; index <= palavra.length; index += 1){
         
-        w = w + p[palavra.length - index];
+        word = word + palavra[palavra.length - index];
         
 
     }
-    if (w === p){
+    if (word.toLocaleLowerCase() === palavra.toLocaleLowerCase()){
         console.log("Sim, é palindromo.");
     }else{
         console.log("Não é palíndromo.");
@@ -17,4 +15,4 @@ function verificaPalindromo(palavra){
 }
 
 
-verificaPalindromo("Amor a Roma");
+verificaPalindromo("Amor a ROma");
