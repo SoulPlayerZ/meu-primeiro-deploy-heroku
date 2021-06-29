@@ -30,7 +30,7 @@ for(let keys in info){
     console.log(info[keys]);
 } */
 
-
+/* 
 // Exercício 5
 let info2 = {
     personagem: "Tio Patinhas",
@@ -39,12 +39,6 @@ let info2 = {
 };
 info2["recorrente"] = "Sim";
 
-/* console.log(info.personagem, "e", info2.personagem);
-console.log(info.origem, "e", info2.origem);
-console.log(info.nota, "e", info2.nota);
- */
-
-
 for(let keys in info, info2){
     if(keys === "recorrente" && info.recorrente === "Sim" && info2["recorrente"] === "Sim"){
         console.log("Ambos recorrentes");
@@ -52,3 +46,4 @@ for(let keys in info, info2){
         console.log(info[keys], "e", info2[keys]);
     }
 }
+ */
