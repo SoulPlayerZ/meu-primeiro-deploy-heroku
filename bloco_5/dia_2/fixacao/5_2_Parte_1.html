@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="paiDoPai">
+        <div id="pai">RED
+          <div id="primeiroFilho"></div>
+          <div id="elementoOndeVoceEsta">
+            <div id="primeiroFilhoDoFilho"></div>
+            <div id="segundoEUltimoFilhoDoFilho"></div>
+          </div>
+          Atenção!
+          <div id="terceiroFilho"></div>
+          <div id="quartoEUltimoFilho"></div>
+        </div>
+      </div>
+    
+      <script>
+        //exercicio 1
+        let elementoOndeVoceEsta = document.getElementById("elementoOndeVoceEsta"); 
+
+        //exercicio 2
+        let paiDoElementoOndeVoceEsta = elementoOndeVoceEsta.parentElement; 
+        paiDoElementoOndeVoceEsta.style.color = "red";
+
+
+        //exercicio 3
+        let primeiroFilhoDoFilho = document.querySelector("#primeiroFilhoDoFilho").innerHTML = ("PRIMEIRO FILHO DO FILHO"); 
+
+        //exercicio 4
+        let  firstChild = paiDoElementoOndeVoceEsta.firstElementChild;
+          firstChild.innerHTML = "primeiro filho a partir do pai";
+
+          //exercicio 5
+          let primeiroFilho = elementoOndeVoceEsta.previousElementSibling;
+
+          //exercicio 6
+          let atencao = elementoOndeVoceEsta.nextSibling;
+
+          //exercicio 7
+          let terceiro = elementoOndeVoceEsta.nextElementSibling;
+          terceiro.innerHTML = "Terceiro";
+
+          //exercicio 8
+          let terceiroFilhoAPartirDoPai = paiDoElementoOndeVoceEsta.lastElementChild.previousElementSibling;
+          terceiroFilhoAPartirDoPai.innerHTML = "Terceiro Filho A Partir do Pai"; 
+      </script>
+</body>
+</html>
