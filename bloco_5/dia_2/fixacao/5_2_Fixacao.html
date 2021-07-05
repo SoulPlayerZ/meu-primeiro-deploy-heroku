@@ -86,12 +86,12 @@
 
   <script>
     // PARTE 3
-    let pai = document.querySelector("#pai");
+    let pai = document.getElementById("pai");
 
     for(let index = pai.childNodes.length - 1; index >=0; index -= 1){ //Gabarito. Estou tentando com for in/of. Não entendo pq só funcionou com o for invertido.
       let filho = pai.childNodes[index];
       if(filho.id !== "elementoOndeVoceEsta"){
-       filho.remove();
+      filho.remove();
       }
     } 
   let ultimoFilho = document.querySelector("#segundoEUltimoFilhoDoFilho");
