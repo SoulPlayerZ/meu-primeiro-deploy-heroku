@@ -20,7 +20,9 @@
         </div>
       </div>
     
-      <script>
+<!--       PARTE 1
+  
+  <script>
         //exercicio 1
         let elementoOndeVoceEsta = document.getElementById("elementoOndeVoceEsta"); 
 
@@ -49,6 +51,37 @@
           //exercicio 8
           let terceiroFilhoAPartirDoPai = paiDoElementoOndeVoceEsta.lastElementChild.previousElementSibling;
           terceiroFilhoAPartirDoPai.innerHTML = "Terceiro Filho A Partir do Pai"; 
-      </script>
+      </script> -->
+     
+ <!--      PARTE 2
+   
+  <script>
+
+       // exercicio 1
+        let pai = document.getElementById("pai");
+        let irmao = document.createElement("div");   
+        irmao.id = "irmao";
+        irmao.innerHTML = "EXERCICIO 1 - CRIANDO IRMÃO.";        
+        pai.appendChild(irmao);
+
+        // exercicio 2
+        let ondeEstou = document.getElementById("elementoOndeVoceEsta");
+        let filhoDoElemento = document.createElement("p");
+        filhoDoElemento.id = "pe";
+        filhoDoElemento.innerHTML = "EXERCICIO 2. TESTE CRIANDO FILHO DO ELEMENTO ONDE VOCE ESTA."  
+        ondeEstou.appendChild(filhoDoElemento);
+
+        //exercicio 3
+        let filim = document.getElementById("primeiroFilhoDoFilho");
+        let filhoDoPrimeiroFilho = document.createElement("p");
+        filhoDoPrimeiroFilho.id = "filho-do-primeiro-filho";
+        filhoDoPrimeiroFilho.innerHTML = "EXERCICIO 3 Criando filho do primeiro filho.";
+        filim.appendChild(filhoDoPrimeiroFilho);
+
+        //exercicio 4
+       let neto = filhoDoPrimeiroFilho.parentElement.parentElement.nextElementSibling;
+       console.log(neto);
+
+    </script> -->
 </body>
 </html>
