@@ -113,8 +113,11 @@ function colorL(string){
   color.addEventListener('click', function(event){
     if(event.target.className === 'task'){
     event.target.className = "task selected";
+    event.target.innerText = 'X';
+    event.target.style.fontSize = '32px';
     }else{
       event.target.className = "task";
+      event.target.innerText = '';
     }
   })
 }
@@ -126,17 +129,32 @@ colorL('red');
 function changeColorDays(){
   let ul = document.querySelector('#days');
   let colorDay = document.getElementById('taskDays');
-  console.log(ul);
-console.log(colorDay);
   ul.addEventListener('click', function(event){
-    if(event.target.style.color === colorDay.style.backgroundColor){
-   event.target.style.color = 'rgb(119,119,119)';
-    }else{
-      event.target.style.color = colorDay.style.backgroundColor;
-    }
+    if(colorDay.className === "task selected"){
+      if(event.target.style.color === colorDay.style.backgroundColor){
+    event.target.style.color = 'rgb(119,119,119)';
+      }else{
+        event.target.style.color = colorDay.style.backgroundColor;
+      }
+    }  
   })
 }
 changeColorDays();
 
+/* exercicio 1 BONUS
+function addTask(){
+  let button = document.getElementById('btn-add');
+  let input = document.getElementById('task-input');
+  button.addEventListener('click',function(event){
+    let newTask = document.querySelector('.my-tasks')
+    let span = document.createElement('span');
+    span.innerHTML = input.nodeValue;
+    newTask.appendChild(newTask);
+    
+
+    criar um span e colocar dentro da div com classe .my-tasks
+  })
+}
 
 
+ */
