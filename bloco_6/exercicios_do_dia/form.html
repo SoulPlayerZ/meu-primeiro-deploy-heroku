@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 6.1 - FORMS</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link href="DatePickerX.min.css" rel="stylesheet">
+</head>
+<body>
+<!-- Lembrar de ver os labels, names e IDs-->
+    <header align='center' class="container">
+        <h1 class="display-3">Formulário Teste</h1>  
+    </header>         
+    <form class='container' method="GET">
+        <div>
+            <label for='name' class='form-label'>
+              <input placeholder="Nome" type="text" id='name' class="form-control formItem" name="nome" maxlength="40" placeholder="Digite o nome" required>
+            </label>
+        </div>        
+        <div>
+            <label for='email' class='form-label'>
+              <input placeholder='E-mail'type="text"  id='email' class="form-control formItem" name='email' maxlength="50" placeholder="Digite o e-mail" required>
+            </label> 
+        </div>
+    
+        <div>
+            <label for='cpf' class='form-label'>
+              <input type="text"  placeholder='CPF' id='cpf' class="form-control formItem" name="CPF" maxlength="11" placeholder="Digite o CPF(SOMENTE NUMEROS)" required>
+            </label> 
+        </div>
+        <div>
+            <label for='ende' class='form-label'>
+              <input placeholder="Endereço" type="text" id="ende" class="form-control formItem" name="ende" maxlength="200" placeholder="Digite o endereço" required>
+            </label> 
+        </div>    
+        <div>
+            <label for='cidade' class='form-label'>
+              <input placeholder="Cidade" type="text" id='cidade' class="form-control formItem" name="cidade" maxlength="28" placeholder="Digite a Cidade"  required>
+            </label> 
+        </div>
+        <div>
+            <label for='estados' class='form-label'>
+                Estado: <select id="estados"  name="estado" class='formItem' required></select>
+            </label> 
+        </div>   
+         <div class="radioButton form-check"> 
+            <label for='casa' class='form-check-label'>
+                <input type="radio" id='casa'name="tipo" class='form-check-input formItem btnn' value="casa"  checked required>Casa
+            </label>  
+        </div>
+        <div class='radioButton form-check'>
+            <label for='ap' class='form-check-label'>
+                <input type="radio" id='ap' name="tipo" class='form-check-input formItem btnn' value="ap" required>Apartamento 
+            </label>  
+        </div>
+        <div>
+            <label for='text-area' class='form-label'>
+                Resumo do currículo: <textarea id='text-area' name='Resumo do currículo' class="form-control formItem" maxlength="1000" rows="5" required></textarea>
+            </label>
+        </div>
+        <div>
+            <label for='cargo' class='form-label'>
+                <input placeholder="Cargo" id='cargo' name='Cargo' class="form-control formItem" type="text" maxlength="500" required>
+            </label>
+        </div>
+        <div>
+            <label for='descricao' class='form-label'>
+                <input placeholder="Descrição do cargo" name='Descrição do cargo' class="form-control formItem" id='descricao'type="text" maxlength="500" required>
+            </label>
+        </div>    
+        <div>
+            <label for='data' class='form-label'>
+             Data de início: <input type="text" name='Data de início'id='data' class="form-control formItem" required>
+            </label>    
+        </div>        
+        <label for='submit' class='form-label'>
+            <button type="submit" id='submit'>Enviar</button>
+        </label>
+        
+        <label for='clear' class='form-label'>
+             <button type="reset" id='clear'>Limpar</button>  
+        </label> 
+    </form> 
+
+
+  
+    <script src = "DatePickerX.min.js "></script>
+  <!--   <script src = "just-validate.min.js"></script> -->
+    <script src="script.js"></script>
+</body>
+</html>
