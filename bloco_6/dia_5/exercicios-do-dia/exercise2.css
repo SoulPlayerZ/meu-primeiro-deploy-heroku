@@ -1,0 +1,54 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+@media screen and (max-width: 600px) {
+    header p{
+        text-align: center;
+        font-size: 17px;
+        margin-bottom: 20px;
+    }
+
+    nav ul{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 40px;
+        padding: 0;
+    }
+
+    nav ul li{
+        list-style: none;
+    }
+   h2{
+       text-align: center;
+   }
+    ul{
+        margin-bottom: 30px;
+        font-size: 17px;
+    }
+    h1{
+        margin-top: 70px;
+        font-size: 25px;
+        text-align: center;
+    }
+    .main-content p{
+        margin: 15px 5%;
+        font-size: 17px;
+    }
+    footer h3{
+        margin-left: 5%;
+        margin-top: 70px;
+    }
+    footer p{
+        font-size: 17px;
+        margin-left: 5%;
+
+    }
+}
+
+  /* até 600 px, 601 a 800, min 801
+
+
+
