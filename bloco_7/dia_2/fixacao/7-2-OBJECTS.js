@@ -86,11 +86,9 @@ console.log(`${skills[index]} Nível: ${event[skills[index]]}`) ;
 
   //------------------Object.assign----------------------
 
-  const person = {
-    name: 'Roberto',
-  };
+
   
-  const lastName = {
+  /* const lastName = {
     lastName: 'Silva',
   };
   
@@ -110,4 +108,4 @@ console.log(`${skills[index]} Nível: ${event[skills[index]]}`) ;
   newPerson.name = 'Gilberto';
   newPerson.xablau = 'xulambs'
   console.log(newPerson);
-  console.log(person);
+  console.log(person); */
