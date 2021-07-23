@@ -30,11 +30,21 @@ function alteraLesson2(par1, par2, par3) {
 
 
 
-  /* -------Questão 2-------------- */
+  /* -------Questão 2-------------- 
   
   const questao2 = () => Object.keys(lesson2);  
    
   console.log(questao2());
+  */
+
+  
+  /* -------Questão 3-------------- */
+  const questao3 = () => Object.keys(lesson3).length;  
+   
+  console.log(questao3());
+
+
+
   
 
 
