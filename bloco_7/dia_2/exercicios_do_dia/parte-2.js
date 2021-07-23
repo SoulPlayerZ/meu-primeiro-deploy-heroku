@@ -44,10 +44,30 @@ function alteraLesson2(par1, par2, par3) {
   console.log(questao3());
   */
 
-   /* -------Questão 4-------------- */
+   /* -------Questão 4--------------
   const questao4 = () => Object.values(lesson1);  
    
   console.log(questao4());
+   */
+
+ /* const newLesson1 = Object.entries(lesson1);
+ const newLesson2 = Object.entries(lesson2);
+ const newLesson3 = Object.entries(lesson3); */
+
+
+ /* -------Questão 5--------------*/
+
+ const allLessons = {};
+ allLessons.lesson1 = Object.assign({}, lesson1);
+ allLessons.lesson2 = Object.assign({}, lesson2);
+ allLessons.lesson3 = Object.assign({}, lesson3);
+
+ console.log(allLessons);
+
+
+ 
+
+
   
 
 
