@@ -77,12 +77,26 @@ function returnValueKey (lesson, position) {
 console.log(returnValueKey(lesson3, 1)); */
 
 
+function verifyPair(lesson, key, value) {
+    const entries = Object.entries(lesson);
+    const  insideArray = [key, value];
+    let result;
+    for(let index = 0; index < entries.length; index += 1){
+        const xulambs = entries[index];
+        if((xulambs[0] === insideArray[0]) && (xulambs[1]  === insideArray[1])) {
+            result = true;
+            break;
+        }else { 
+            result = false;
+         } 
+     }   
+     return result; 
+ }
 
- 
 
 
-  
-
+ console.log(verifyPair(lesson1, 'numeroEstudantes', 20));
+ // Output: false
 
 
 
