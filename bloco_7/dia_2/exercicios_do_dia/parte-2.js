@@ -55,14 +55,27 @@ function alteraLesson2(par1, par2, par3) {
  const newLesson3 = Object.entries(lesson3); */
 
 
- /* -------Questão 5--------------*/
+ /* -------Questão 5--------------
 
  const allLessons = {};
  allLessons.lesson1 = Object.assign({}, lesson1);
  allLessons.lesson2 = Object.assign({}, lesson2);
  allLessons.lesson3 = Object.assign({}, lesson3);
 
- console.log(allLessons);
+  console.log(allLessons);*/
+
+/* -------Questão 6(Precisa do 5 'Descomentado'--------------
+ const total = () => allLessons.lesson1.numeroEstudantes + allLessons.lesson2.numeroEstudantes + allLessons.lesson3.numeroEstudantes;
+console.log(total());*/
+
+/* -------Questão 7--------------
+function returnValueKey (lesson, position) {
+    const value = Object.values(lesson);
+    return value[position];
+}
+
+console.log(returnValueKey(lesson3, 1)); */
+
 
 
  
