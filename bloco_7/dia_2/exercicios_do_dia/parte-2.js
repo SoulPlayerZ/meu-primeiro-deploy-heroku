@@ -17,6 +17,8 @@ const lesson1 = {
     professor: 'Maria Clara',
     turno: 'noite',
   };
+/* -------Questão 1--------------
+
 function alteraLesson2(par1, par2, par3) {
     const keyTurno= par2;
     par1[keyTurno] = par3;
@@ -24,6 +26,15 @@ function alteraLesson2(par1, par2, par3) {
 }
 
   alteraLesson2(lesson2, 'turno', 'manha');
-  console.log('lesson 2', lesson2);
+  console.log('lesson 2', lesson2); */
+
+
+
+  /* -------Questão 2-------------- */
+  
+  const questao2 = () => Object.keys(lesson2);  
+   
+  console.log(questao2());
+  
 
 
