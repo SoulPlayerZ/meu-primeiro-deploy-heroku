@@ -38,10 +38,18 @@ function alteraLesson2(par1, par2, par3) {
   */
 
   
-  /* -------Questão 3-------------- */
+  /* -------Questão 3-------------- 
   const questao3 = () => Object.keys(lesson3).length;  
    
   console.log(questao3());
+  */
+
+   /* -------Questão 4-------------- */
+  const questao4 = () => Object.values(lesson1);  
+   
+  console.log(questao4());
+  
+
 
 
 
