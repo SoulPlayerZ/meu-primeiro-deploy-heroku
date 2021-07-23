@@ -7,7 +7,7 @@ const lesson1 = {
   
   const lesson2 = {
     materia: 'História',
-    numeroEstudantes: 20,
+    numeroEstudantes: 50,
     professor: 'Carlos',
   };
   
@@ -55,14 +55,14 @@ function alteraLesson2(par1, par2, par3) {
  const newLesson3 = Object.entries(lesson3); */
 
 
- /* -------Questão 5--------------
+ /* -------Questão 5-------------*/
 
  const allLessons = {};
  allLessons.lesson1 = Object.assign({}, lesson1);
  allLessons.lesson2 = Object.assign({}, lesson2);
  allLessons.lesson3 = Object.assign({}, lesson3);
 
-  console.log(allLessons);*/
+  console.log(allLessons);
 
 /* -------Questão 6(Precisa do 5 'Descomentado'--------------
  const total = () => allLessons.lesson1.numeroEstudantes + allLessons.lesson2.numeroEstudantes + allLessons.lesson3.numeroEstudantes;
@@ -76,7 +76,7 @@ function returnValueKey (lesson, position) {
 
 console.log(returnValueKey(lesson3, 1)); */
 
-
+/* -------Questão 8--------------
 function verifyPair(lesson, key, value) {
     const entries = Object.entries(lesson);
     const  insideArray = [key, value];
@@ -95,11 +95,17 @@ function verifyPair(lesson, key, value) {
 
 
 
- console.log(verifyPair(lesson1, 'numeroEstudantes', 20));
+ console.log(verifyPair(lesson3, 'turno', 'noite'));
+ // Output: true,
+ console.log(verifyPair(lesson3, 'materia', 'Maria Clara'));
  // Output: false
 
+  */
 
 
-  
 
+/* -------Questão BÔNUS 1 (Precisa do 5 'Descomentado'--------------
+const totalStudents = ()=> lesson1.numeroEstudantes + lesson2.numeroEstudantes + lesson3.numeroEstudantes;
+console.log(totalStudents());*/
 
+/* -------Questão BÔNUS 2 (Precisa do 5 'Descomentado'--------------*/
