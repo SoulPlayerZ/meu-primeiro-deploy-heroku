@@ -7,7 +7,7 @@ const lesson1 = {
   
   const lesson2 = {
     materia: 'História',
-    numeroEstudantes: 50,
+    numeroEstudantes: 20,
     professor: 'Carlos',
   };
   
@@ -17,10 +17,10 @@ const lesson1 = {
     professor: 'Maria Clara',
     turno: 'noite',
   };
-/* -------Questão 1--------------
+ /* -------Questão 1-------------- 
 
 function alteraLesson2(par1, par2, par3) {
-    const keyTurno= par2;
+    const keyTurno = par2;
     par1[keyTurno] = par3;
      console.log('par', par1);
 }
@@ -58,11 +58,11 @@ function alteraLesson2(par1, par2, par3) {
  /* -------Questão 5-------------*/
 
  const allLessons = {};
- allLessons.lesson1 = Object.assign({}, lesson1);
- allLessons.lesson2 = Object.assign({}, lesson2);
- allLessons.lesson3 = Object.assign({}, lesson3);
+ allLessons.lesson1 = lesson1;
+ allLessons.lesson2 = lesson2;
+ allLessons.lesson3 = lesson3;
 
-  console.log(allLessons);
+  console.log(allLessons); 
 
 /* -------Questão 6(Precisa do 5 'Descomentado'--------------
  const total = () => allLessons.lesson1.numeroEstudantes + allLessons.lesson2.numeroEstudantes + allLessons.lesson3.numeroEstudantes;
@@ -109,3 +109,26 @@ const totalStudents = ()=> lesson1.numeroEstudantes + lesson2.numeroEstudantes +
 console.log(totalStudents());*/
 
 /* -------Questão BÔNUS 2 (Precisa do 5 'Descomentado'--------------*/
+
+function createReport(lessons, profName) {
+ /* let teste1 = Object.assign({}, lessons.lesson1);
+ let teste2 = Object.assign({}, lessons.lesson2);
+ let teste3 = Object.assign({}, lessons.lesson3); */
+/*  let students1 = 0;
+ let students2 = 0;
+ let students3 = 0;
+ let totalClass = 0;
+
+  if(lessons.lesson1.professor === profName) {
+   students1 = lessons.lesson1.numeroEstudantes;
+  }
+  if(lessons.lesson2.professor === profName) {
+    students2 = lessons.lesson2.numeroEstudantes;
+  }
+  if (lessons.lesson3.professor === profName) {
+    students3 = lessons.lesson3.numeroEstudantes;
+  }
+     totalClass = students1 + students2 + students3;
+}
+console.log(createReport(allLessons, 'Maria Clara')) */
+}
