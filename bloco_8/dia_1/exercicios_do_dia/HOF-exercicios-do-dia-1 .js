@@ -1,7 +1,8 @@
 const pessoa = (nome1, lastName) => {
+  const fullName = nome1 + lastName
    const p = {
       name: `${nome1} ${lastName}`,
-      email: nome1 + lastName + '@trybe.com',
+      email: fullName.toLowerCase() + '@trybe.com',
     };
     return p;
 };
