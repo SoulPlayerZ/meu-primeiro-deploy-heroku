@@ -2,8 +2,7 @@
 
 const hasName = (arr, name) => {
 
- return arr.some((item) =>  item === name ); 
- 
+ return arr.some((item) =>  item === name );  
 }
 
 console.log(hasName(names, 'Ana'));
