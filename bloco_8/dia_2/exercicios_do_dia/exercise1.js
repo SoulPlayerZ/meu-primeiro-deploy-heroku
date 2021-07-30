@@ -115,7 +115,7 @@ getNamedBook();
  assert.deepStrictEqual(getNamedBook(), expectedResult); */
 
  // QUESTÃO 4
- const expectedResult = [
+/*  const expectedResult = [
   {
     id: 1,
     name: 'As Crônicas de Gelo e Fogo',
@@ -168,4 +168,25 @@ function booksOrderedByReleaseYearDesc() {
 
 booksOrderedByReleaseYearDesc();
 
-assert.deepStrictEqual(booksOrderedByReleaseYearDesc(), expectedResult);
+assert.deepStrictEqual(booksOrderedByReleaseYearDesc(), expectedResult); */
+
+//QUESTAO 5
+/* const expectedResult = false;
+
+function everyoneWasBornOnSecXX() {
+  // escreva seu código aqui
+  return books.every((item) => (item.author.birthYear >= 1901) && (item.author.birthYear <= 2001));
+}
+console.log(everyoneWasBornOnSecXX());
+
+assert.strictEqual(everyoneWasBornOnSecXX(), expectedResult); */
+
+//QUESAO 6
+const expectedResult = true;
+
+function someBookWasReleaseOnThe80s() {
+  // escreva seu código aqui
+  return books.some((item) => (item.releaseYear >= 1980) && (item.releaseYear < 1990));
+}
+
+assert.strictEqual(someBookWasReleaseOnThe80s(), expectedResult);
