@@ -215,7 +215,7 @@ assert.deepStrictEqual(oldBooksOrdered(), expectedResult); */
 assert.deepStrictEqual(fantasyOrScienceFictionAuthors(), expectedResult); */
 
 //Questão 6
-const expectedResult = [
+/* const expectedResult = [
     'O Senhor dos Anéis',
     'Fundação',
     'O Chamado de Cthulhu',
@@ -228,4 +228,17 @@ const expectedResult = [
   }
   
   console.log(oldBooks());
-  assert.deepStrictEqual(oldBooks(), expectedResult);
+  assert.deepStrictEqual(oldBooks(), expectedResult); */
+
+  //Questão 7
+
+  const expectedResult = 'O Senhor dos Anéis';
+
+function authorWith3DotsOnName() {
+  // escreva seu código aqui
+  const findBookName = books.find((item) => item.author.name.toLocaleUpperCase().startsWith('J'));
+  return findBookName.name;
+}
+console.log(authorWith3DotsOnName());
+
+assert.deepStrictEqual(authorWith3DotsOnName(), expectedResult);
