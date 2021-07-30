@@ -195,7 +195,7 @@ const books = [
 assert.deepStrictEqual(oldBooksOrdered(), expectedResult); */
 
 //Questão 5
-const expectedResult = [
+/* const expectedResult = [
     'Frank Herbert',
     'George R. R. Martin',
     'Isaac Asimov',
@@ -212,4 +212,20 @@ const expectedResult = [
 
   //ordem alfabeticas dos nomes. Já tem os elementos pelo gênero 
   
-assert.deepStrictEqual(fantasyOrScienceFictionAuthors(), expectedResult);
+assert.deepStrictEqual(fantasyOrScienceFictionAuthors(), expectedResult); */
+
+//Questão 6
+const expectedResult = [
+    'O Senhor dos Anéis',
+    'Fundação',
+    'O Chamado de Cthulhu',
+  ];
+  
+  function oldBooks() {
+    // escreva seu código aqui
+   const oldBooks = books.filter((item) => (item.releaseYear <= 1961));
+   return oldBooks.map((item) => item.name);
+  }
+  
+  console.log(oldBooks());
+  assert.deepStrictEqual(oldBooks(), expectedResult);
