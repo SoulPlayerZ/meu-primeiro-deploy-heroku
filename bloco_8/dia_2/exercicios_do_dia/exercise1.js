@@ -182,11 +182,11 @@ console.log(everyoneWasBornOnSecXX());
 assert.strictEqual(everyoneWasBornOnSecXX(), expectedResult); */
 
 //QUESAO 6
-const expectedResult = true;
+/* const expectedResult = true;
 
 function someBookWasReleaseOnThe80s() {
   // escreva seu código aqui
   return books.some((item) => (item.releaseYear >= 1980) && (item.releaseYear < 1990));
 }
 
-assert.strictEqual(someBookWasReleaseOnThe80s(), expectedResult);
+assert.strictEqual(someBookWasReleaseOnThe80s(), expectedResult); */
