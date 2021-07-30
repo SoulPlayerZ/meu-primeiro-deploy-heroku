@@ -162,7 +162,7 @@ const books = [
   assert.deepStrictEqual(fantasyOrScienceFiction(), expectedResult); */
 
   //Questão 4
-  const expectedResult = [
+  /* const expectedResult = [
     {
       id: 6,
       name: 'O Chamado de Cthulhu',
@@ -192,4 +192,24 @@ const books = [
     
   }
   
-assert.deepStrictEqual(oldBooksOrdered(), expectedResult);
+assert.deepStrictEqual(oldBooksOrdered(), expectedResult); */
+
+//Questão 5
+const expectedResult = [
+    'Frank Herbert',
+    'George R. R. Martin',
+    'Isaac Asimov',
+    'J. R. R. Tolkien',
+  ];
+  
+  function fantasyOrScienceFictionAuthors() {
+    // escreva seu código aqui
+    const objetosFiltrados = books.filter((item) => (item.genre === 'Ficção Científica') || (item.genre === 'Fantasia'));
+    return objetosFiltrados.map((item) => item.author.name).sort();
+    
+
+  }  
+
+  //ordem alfabeticas dos nomes. Já tem os elementos pelo gênero 
+  
+assert.deepStrictEqual(fantasyOrScienceFictionAuthors(), expectedResult);
