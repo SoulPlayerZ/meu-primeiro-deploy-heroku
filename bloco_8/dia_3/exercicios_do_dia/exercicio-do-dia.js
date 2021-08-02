@@ -195,7 +195,7 @@ const books = [
 assert.deepStrictEqual(oldBooksOrdered(), expectedResult); */
 
 //Questão 5
-/* const expectedResult = [
+ /*  const expectedResult = [
     'Frank Herbert',
     'George R. R. Martin',
     'Isaac Asimov',
@@ -204,10 +204,7 @@ assert.deepStrictEqual(oldBooksOrdered(), expectedResult); */
   
   function fantasyOrScienceFictionAuthors() {
     // escreva seu código aqui
-    const objetosFiltrados = books.filter((item) => (item.genre === 'Ficção Científica') || (item.genre === 'Fantasia'));
-    return objetosFiltrados.map((item) => item.author.name).sort();
-    
-
+    return books.filter((item) => (item.genre !== 'Terror')).map((item) => item.author.name).sort(); 
   }  
 
   //ordem alfabeticas dos nomes. Já tem os elementos pelo gênero 
@@ -232,13 +229,13 @@ assert.deepStrictEqual(fantasyOrScienceFictionAuthors(), expectedResult); */
 
   //Questão 7
 
-  const expectedResult = 'O Senhor dos Anéis';
+/*   const expectedResult = 'O Senhor dos Anéis';
 
 function authorWith3DotsOnName() {
   // escreva seu código aqui
   const findBookName = books.find((item) => item.author.name.toLocaleUpperCase().startsWith('J'));
   return findBookName.name;
 }
-console.log(authorWith3DotsOnName());
+ console.log(authorWith3DotsOnName()); 
 
-assert.deepStrictEqual(authorWith3DotsOnName(), expectedResult);
+assert.deepStrictEqual(authorWith3DotsOnName(), expectedResult);  */
