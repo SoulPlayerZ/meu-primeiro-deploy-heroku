@@ -31,16 +31,16 @@ console.log(fruitSalad(specialFruit, additionalItens));
 
 
 //questão 3
-/* let numerosPares = [1, 3, 5, 6, 8, 10, 12];
+ let numerosPares = [1, 3, 5, 6, 8, 10, 12];
 
 
-/* console.log(numerosPares); // [6, 8, 10, 12]; */
+ console.log(numerosPares); // [6, 8, 10, 12]; */
 
 // Utilize array destructuring para produzir o resultado esperado pelo console.log abaixo
 
-//[,,,...numerosPares] = numerosPares;
+[,,,...numerosPares] = numerosPares;
 
-//console.log(numerosPares); // [6, 8, 10, 12]; */
+console.log(numerosPares); // [6, 8, 10, 12]; 
 
 
 //Default Destructing
@@ -60,3 +60,7 @@ const otherPerson = {
 
 console.log(getNationality(otherPerson)); // Ivan is Russian
 console.log(getNationality(person)); */
+/* 
+const greeting = (user = 'usuário') => console.log(`Welcome ${user}!`);
+
+greeting(5); // // Welcome usuário! */
