@@ -103,3 +103,20 @@ assert.deepStrictEqual(filteredPeople[1], { name: 'Toby', bornIn: 1901, national
 
 //Questão 5
 
+const assert = require('assert');
+
+const myList = [1, 2, 3];
+
+// const m = [8,9,5];
+
+// escreva swap abaixo
+const swap = ([a, b, c] = parameter) => [c,b,a]; 
+
+const swappedList = swap(myList);
+// const swappedList = swap(m);
+
+console.log(swappedList);
+
+assert.strictEqual(swappedList[0], 3);
+assert.strictEqual(swappedList[1], 2);
+assert.strictEqual(swappedList[2], 1);
