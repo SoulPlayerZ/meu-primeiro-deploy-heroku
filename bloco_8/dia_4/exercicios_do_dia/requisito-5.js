@@ -9,8 +9,9 @@ const names = [
 function containsA() {
   // escreva seu código aqui
  return names.reduce((acc, cur) => acc + cur.split('').reduce((acc, cur) => {
-    if (cur.toLowerCase() === 'a') return acc + 1;
+    if (cur.toUpperCase() === 'A') return acc + 1;
     return acc;
+    //acc do segundo reduce é o antigo count
  }, 0),0);
 }
   
