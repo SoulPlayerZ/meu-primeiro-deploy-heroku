@@ -165,3 +165,15 @@ console.log(shipLength(ships[2]));
 assert.strictEqual(shipLength(ships[0]), 'Titanic is 269.1 meters long');
 assert.strictEqual(shipLength(ships[1]), 'Queen Mary 2 is 1132 feet long');
 assert.strictEqual(shipLength(ships[2]), 'Yamato is 256 meters long'); */
+
+//Questão 8
+/* const assert = require('assert');
+
+// escreva greet abaixo
+const greet = (name = 'Pessoa', salutation = 'Hi') => `${ salutation } ${ name }`;
+// console.log(greet());
+// console.log(greet('Ardrubal', 'Hello'));
+
+assert.strictEqual(greet('John'), 'Hi John');
+assert.strictEqual(greet('John', 'Good morning'), 'Good morning John');
+assert.strictEqual(greet('Isabela', 'Oi'), 'Oi Isabela'); */
