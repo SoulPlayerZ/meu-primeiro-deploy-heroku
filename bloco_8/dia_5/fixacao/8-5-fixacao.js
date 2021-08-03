@@ -1,4 +1,4 @@
-// Spread
+/* // Spread
 
 //Faça uma lista com as suas frutas favoritas
 const specialFruit = ['banana', 'maçã', 'melancia'];
@@ -13,3 +13,18 @@ const fruitSalad = (fruit, additional) => {
 
 console.log(fruitSalad(specialFruit, additionalItens));
 
+ */
+
+//Array destructing
+
+// let comida = 'gato';
+// let animal = 'água';
+// let bebida = 'arroz';
+
+// const array =[bebida, comida, animal, 'xablau'];
+
+// const result =[ comida, animal, bebida, x] = array; 
+// console.log(comida, animal, bebida, x); // arroz gato água
+
+
+// Utilizando array destructuring, faça com que os valores apareçam nas variáveis correspondentes ao seu verdadeiro tipo
