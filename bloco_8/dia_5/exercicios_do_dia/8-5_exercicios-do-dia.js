@@ -103,7 +103,7 @@ assert.deepStrictEqual(filteredPeople[1], { name: 'Toby', bornIn: 1901, national
 
 //Questão 5
 
-const assert = require('assert');
+/* const assert = require('assert');
 
 const myList = [1, 2, 3];
 
@@ -119,4 +119,21 @@ console.log(swappedList);
 
 assert.strictEqual(swappedList[0], 3);
 assert.strictEqual(swappedList[1], 2);
-assert.strictEqual(swappedList[2], 1);
+assert.strictEqual(swappedList[2], 1); */
+
+//Questão 6
+/* const assert = require('assert');
+
+const palio = ['Palio', 'Fiat', 2019];
+const shelbyCobra = ['Shelby Cobra', 'Ford', 1963];
+const chiron = ['Chiron', 'Bugatti', 2016];
+
+// escreva toObject abaixo
+const toObject = ([name, brand, year]) => { return { name, brand, year }} ;
+ console.log(toObject(chiron));
+
+assert.deepStrictEqual(toObject(palio), { name: 'Palio', brand: 'Fiat', year: 2019 });
+assert.deepStrictEqual(toObject(shelbyCobra), { name: 'Shelby Cobra', brand: 'Ford', year: 1963 });
+assert.deepStrictEqual(toObject(chiron), { name: 'Chiron', brand: 'Bugatti', year: 2016 }); */
+
+//Questão 7
