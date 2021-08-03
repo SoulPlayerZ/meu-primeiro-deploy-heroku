@@ -12,7 +12,7 @@ function containsA() {
     if (cur.toUpperCase() === 'A') return acc + 1;
     return acc;
     //acc do segundo reduce é o antigo count
- }, 0),0);
+ }, 0), 0);
 }
   
 
