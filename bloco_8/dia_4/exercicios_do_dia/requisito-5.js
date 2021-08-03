@@ -8,9 +8,9 @@ const names = [
 
 function containsA() {
   // escreva seu código aqui
- return names.reduce((acc, cur) => acc + cur.split('').reduce((acumulator, current) => {
-    if (current.toLowerCase() === 'a') return acumulator + 1;
-    return acumulator;
+ return names.reduce((acc, cur) => acc + cur.split('').reduce((acc, cur) => {
+    if (cur.toLowerCase() === 'a') return acc + 1;
+    return acc;
  }, 0),0);
 }
   
