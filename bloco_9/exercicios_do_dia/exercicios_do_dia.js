@@ -69,7 +69,8 @@ setTimeout(() => console.log(planetDistanceFromSun(jupiter)), 2000); // C */
 // A, C, B -> setTimeoute da C está para executar em 2ms e da B está em 3. A está síncrona.
 
 //Questão 3
-const print = (marsParam) => console.log("Returned planet: ", marsParam);
+//Criei a função PRINT para testar se eu estava entendendo o que estava acontecendo corretamente :)
+/* const print = (marsParam) => console.log("Returned planet: ", marsParam);
 const getPlanet = () => {
     const mars = {
       name: "Mars",
@@ -82,3 +83,20 @@ const getPlanet = () => {
   };
   
   getPlanet(); // imprime Marte depois de 4 segundos
+
+ */
+
+  //QUESTÃO 4
+const messageDelay = () => Math.floor(Math.random() * 5000);
+
+const getMarsTemperature = () => {
+  const maxTemperature = 58;
+  return Math.floor(Math.random() * maxTemperature);
+};
+
+// crie a função sendMarsTemperature abaixo
+function sendMarsTemperature() {
+   setTimeout(() => console.log(`Mars temperature is: ${getMarsTemperature()} degree Celsius.`), messageDelay());
+}
+
+sendMarsTemperature(); // imprime "Mars temperature is: 20 degree Celsius", por exemplo
