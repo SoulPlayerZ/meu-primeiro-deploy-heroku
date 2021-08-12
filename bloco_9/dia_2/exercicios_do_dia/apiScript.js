@@ -16,21 +16,37 @@ const fetchJoke = () => {
 };
 
 window.onload = () => fetchJoke(); */
+
+
+
+
+
+
+
+
+
 const arrayNumbers = [];
-for (index = 0; index < 50; index += 1){
+for (index = 0; index < 10; index += 1){
   arrayNumbers.push(Math.floor((Math.random() * 50) + 1));
 }
 console.log(arrayNumbers);
 
  const promise = new Promise ((resolve, reject) => {
  const sumSquared = arrayNumbers.map((number) =>  number * number).reduce((acc, cur) => acc += cur);
-   if(sumSquared < 50){
+   if(sumSquared < 8000){
    resolve(sumSquared);
   }
    reject(sumSquared);
    })
-   .then((res) => console.log(`Promise resolvida. O total da soma dos valores² do array é: ${res}`))
-   .catch((rej) => console.log(`Promise rejeitada. O total da soma dos valores² do array é: ${rej}`));
+   .then((res) => {
+     console.log(`Promise resolvida. sumSquared: ${res}`);
+     const arrayForDiv = [2, 3, 5, 10];
+     const result = arrayForDiv.reduce((acc, cur) => { acc.push(Math.floor(res/ cur)); return acc}, []);
+     console.log(result);
+     return result;
+   })
+   .then((sumNewArray) => console.log(`A soma dos 4 elementos do novo Array é: ${sumNewArray.reduce((acc, cur) => acc += cur)}`))
+   .catch((rej) => console.log(`Promise rejeitada. "É mais de oito mil! Essa promise deve estar quebrada!" sumSquared: ${rej}`));
 
 
 
