@@ -8,7 +8,7 @@ class App extends React.Component {
     
    return(
     <main>
-        <h1>Pokedex</h1>
+        <h1>Mini-Pokedex</h1>
         <div className='main-list'>
           {pokemons.map((pokemon) => <Pokemon key={pokemon.id} Pokemon={pokemon}/>)}
         </div>
