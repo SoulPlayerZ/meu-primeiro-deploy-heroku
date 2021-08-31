@@ -1,7 +1,7 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
 
-const arrayTasks = ['Estudar', 'Tomar banho', 'Escovar os dentes', 'xablau', 'uhuu', 9, 1, ['a', 'b', 'c', 'd']];
+const arrayTasks = ['Estudar', 'Tomar banho', 'Escovar os dentes', 'xablau', 'uhuu', 9, 1, ['a', 'b', 'c', 'd'].map((letter) => letter + ' Alô'), 90];
 
 const Task = (value) => {
   return (
