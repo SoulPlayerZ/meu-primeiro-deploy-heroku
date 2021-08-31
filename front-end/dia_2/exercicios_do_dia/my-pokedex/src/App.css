@@ -1,0 +1,33 @@
+main {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-end;
+}
+h1{
+  align-self: center;
+}
+.main-list{
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+  width: 800px;
+}
+.pokemon {
+  display: flex;
+  width: 300px;
+  border: 1px solid black;
+  box-shadow: 3px 3px 3px black;
+  border-radius: 10px;
+}
+
+.gif {
+  align-self: flex-end;
+}
+
+.info {
+  margin-left: 10px;
+}
+
+section{
+  margin: 15px 15px;
+}
